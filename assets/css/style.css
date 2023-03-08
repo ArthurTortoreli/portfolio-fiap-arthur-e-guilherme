@@ -1,24 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+:root{
+    font-size: 62.5%; /*10px / 16px*/
+}
+
 h1 {
-    font-size: 30px;
+    font-family: 'Poppins';
+    font-size: 40px;
     font-weight: bolder;
     color: rgb(0, 0, 0);
 }
 
+span {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
 a{
-    font-size: 25px;
+    font-family: 'Poppins';
+    font-size: 35px;
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
 
+header {
+    height: 100vh;
+    background-image: url('');
+}
+
 #home {
-    width: 500px;
-    height: 350px;
+    width: 1050px;
     background: url(img_navsprites.gif) 0 0;
   }
 
 h2 {
     font-size: 30px;
     font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+p {    
+    font-size: 15px;
     color: rgb(0, 0, 0);
 }
 
@@ -34,3 +56,4 @@ h3 {
     background: url(img_navsprites.gif) 0 0;
     border-radius: 50%;
 }
+
