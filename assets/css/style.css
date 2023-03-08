@@ -1,36 +1,5 @@
 h1 {
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-}
-
-a{
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-
-#home {
-    width: 500px;
-    height: 350px;
-    background: url(img_navsprites.gif) 0 0;
-  }
-
-h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-
-h3 {
-    font-size: 30px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
-
-#perfil {
-    width: 200px;
-    height: 200px;
-    background: url(img_navsprites.gif) 0 0;
-    border-radius: 50%;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #FFF;
 }
