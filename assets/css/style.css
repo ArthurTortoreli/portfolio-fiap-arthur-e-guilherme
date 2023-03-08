@@ -1,5 +1,31 @@
-h1 {
-    font-size: 3.75rem;
-    font-weight: 700;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /*10px / 16px */
+}
+
+header {
+    height: 100vh;
+    background-image: url('../images/BackGround_MeninoJogandoBola.PNG');
+    background-size: cover;
     color: #FFF;
+    /* shorthand */
+    padding: 5rem 5rem;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+span {
+    font-family: 'Montserrat';
+    font-size: 4.5rem;
 }
