@@ -38,4 +38,5 @@ span {
     font-size: 3rem;
     color: #FFF;
     text-shadow: 0 0.2rem 0.2rem #00000040;
+    text-decoration: none;
 }
