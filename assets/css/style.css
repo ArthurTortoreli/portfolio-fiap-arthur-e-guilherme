@@ -1,59 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root{
     font-size: 62.5%; /*10px / 16px*/
 }
 
+header {
+    height: 100vh;
+    background-image: url('../../futebol-no-conceito-de-sucesso-do-objetivo.jpg');
+    background-size: cover;
+    color: #FFF;
+    /* shorthand */
+    padding: 5rem 5rem;
+}
+
+
 h1 {
     font-family: 'Poppins';
-    font-size: 40px;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.15rem black;
 }
 
 span {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-}
-
-a{
+    position: relative;
+    top: 23rem;
     font-family: 'Poppins';
-    font-size: 35px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.12rem black;
 }
 
-header {
-    height: 100vh;
-    background-image: url('');
+.botao {
+    position: relative;
+    top: 23rem;
+    padding: 1.0rem 8.0rem;
+    background: #d9d9d9b3;
+    border-radius: 4rem;
+    font-family: 'Poppins';
+    font-size: 3.5rem;
+    color: #FFF;
+    text-shadow: 0 0.2rem 0.2rem #00000040;
+    text-decoration: none;
 }
-
-#home {
-    width: 1050px;
-    background: url(img_navsprites.gif) 0 0;
-  }
 
 h2 {
-    font-size: 30px;
+    position: relative;
+    top: 5rem;
+    left: 70rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 4.5rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
 
-p {    
-    font-size: 15px;
+p {   
+    position: relative;
+    top: 5rem;
+    left: 70rem; 
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 1.8rem;
     color: rgb(0, 0, 0);
 }
 
 h3 {
-    font-size: 30px;
+    position: relative;
+    top: 3rem;
+    left: 70rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 4.5rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
 
 #perfil {
-    width: 200px;
-    height: 200px;
+    position: relative;
+    top: -12rem;
+    left: 15rem; 
+    width: 30rem;
+    height: 30rem;
     background: url(img_navsprites.gif) 0 0;
-    border-radius: 50%;
+    border-radius: 50rem;
 }
 
