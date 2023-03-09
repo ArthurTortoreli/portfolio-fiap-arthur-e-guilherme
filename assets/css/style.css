@@ -53,7 +53,7 @@ span {
 
 h2 {
     position: relative;
-    top: 5rem;
+    top: 11rem;
     left: 70rem;
     font-family: 'Inter';
     font-weight: 700;
@@ -64,7 +64,7 @@ h2 {
 
 p {   
     position: relative;
-    top: 5rem;
+    top: 10rem;
     left: 70rem; 
     font-family: 'Inter';
     font-weight: 600;
@@ -74,7 +74,7 @@ p {
 
 h3 {
     position: relative;
-    top: 3rem;
+    top: 11rem;
     left: 70rem;
     font-family: 'Inter';
     font-weight: 700;
