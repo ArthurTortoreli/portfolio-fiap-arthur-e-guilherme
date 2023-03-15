@@ -19,7 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(../../futebol-no-conceito-de-sucesso-do-objetivo.jpg);
+    background-image: url(../images/futebol-no-conceito-de-sucesso-do-objetivo.jpg);
     background-size: cover;
     color: #FFF;
     padding: 5rem 5rem;
