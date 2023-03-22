@@ -15,6 +15,10 @@
     --color-textdefault: 'black';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -80,6 +84,17 @@ h3 {
     height: 30rem;
     background: url(img_navsprites.gif) 0 0;
     border-radius: 50rem;
+    animation: zoom 1s;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.2);
+    }
+
+    100%{
+        transform: scale(1);
+    }
 }
 
 section {
@@ -95,3 +110,43 @@ section {
     align-items: flex-start;
 }
 
+#secao-projetos{
+    background-color: white;
+    color: var(--color-textdefault);
+    font-size: 2rem;
+}
+
+#secao-projetos ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover .card-image{
+    opacity: .5;
+}
+
+.card:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
+.card-image img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition: bottom 0.7s;
+}
