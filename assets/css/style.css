@@ -17,6 +17,10 @@
     --color-button: #d9d9d9b3;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-default);
 }
@@ -112,6 +116,7 @@ section {
 
 .card:hover .card-info{
     opacity: 1;
+    bottom: 20%;
 }
 
 .card-image img {
@@ -122,6 +127,7 @@ section {
 
 .card-info {
     position: absolute;
-    bottom: 20%;
+    bottom: 0;
     opacity: 0;
+    transition: opacity .5s ease-in-out, bottom .5s;
 }
