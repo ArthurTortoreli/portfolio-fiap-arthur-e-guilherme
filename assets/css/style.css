@@ -150,3 +150,15 @@ section {
     transition: opacity 0.5s ease-in-out;
     transition: bottom 0.7s;
 }
+#secao-apresentacao {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#perfil_texto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
