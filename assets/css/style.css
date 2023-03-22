@@ -88,3 +88,40 @@ section {
     align-items: flex-start;
     gap: 2rem;
 }
+
+#secao-projetos{
+    background-color: #212121;
+    color: var(--color-default);
+}
+
+#secao-projetos ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover .card-image{
+    opacity: .2;
+}
+
+.card:hover .card-info{
+    opacity: 1;
+}
+
+.card-image img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 20%;
+    opacity: 0;
+}
