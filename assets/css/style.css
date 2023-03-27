@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -33,6 +35,7 @@ header {
 
 h1 {
     font-family: var(--font-header);
+    font-weight: 900;
     font-size: 6rem;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.15rem rgb(0, 0, 0);
@@ -42,6 +45,7 @@ h1 {
 span {
     font-family: var(--font-header);
     font-size: 4rem;
+    font-weight: 900;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.12rem black;
 }
@@ -52,6 +56,7 @@ span {
     border-radius: 4rem;
     font-family: var(--font-header);
     font-size: 3.5rem;
+    font-weight: 900;
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
     text-decoration: none;
@@ -62,6 +67,7 @@ span {
     background: #1b6e0bb3;
     border-radius: 4rem;
     font-family: var(--font-header);
+    font-weight: 900;
     font-size: 3.5rem;
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
@@ -77,8 +83,8 @@ h2 {
 }
 
 p {   
-    font-family: var(--font-apresentacao);
-    font-weight: 600;
+    font-family: Poppins;
+    font-weight: 200;
     font-size: 1.8rem;
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
@@ -88,6 +94,22 @@ h3 {
     font-family: Poppins;
     font-weight: 700;
     font-size: 4.5rem;
+    color: white;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
+}
+
+h4 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: white;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
+}
+
+h5 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 2rem;
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -125,16 +147,17 @@ section {
 }
 
 #secao-projetos{
-    background-color: white;
+    background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
     color: var(--color-textdefault);
     font-size: 2rem;
+    height: 100vh;
 }
 
-#secao-projetos ul{
+#secao-projetos ul {
     display: flex;
     gap: 3rem;
-    justify-content: space-around;
     list-style: none;
+    align-items: center;
 }
 
 .card{
@@ -152,13 +175,15 @@ section {
 }
 
 .card-image img{
-    height: 400px;
-    width: 300px;
-    border-radius: 10px;
+    height: 60rem;
+    width: 38rem;
+    border-radius: 1rem;
+    border: white solid 3.5px;
 }
 
 .card-info{
     position: absolute;
+    left: 3rem;
     bottom: 0;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
