@@ -114,6 +114,14 @@ h5 {
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
+h6 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
+}
+
 .perfil {
     margin-top: 3rem;
     width: 30rem;
@@ -199,6 +207,13 @@ section {
 #perfil_texto{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+#projetos_texto{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 3rem;
 }
