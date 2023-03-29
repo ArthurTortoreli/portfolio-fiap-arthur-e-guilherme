@@ -143,3 +143,27 @@ section {
     opacity: 0;
     transition: opacity .5s ease-in-out, bottom .5s;
 }
+
+#secao-orcamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #212121;
+}
+
+#secao-orcamento form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+#secao-orcamento h3 {
+    position: absolute;
+    top: -10%;
+    background-color: #6A3093;
+    color: #FFF;
+}
