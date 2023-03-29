@@ -194,8 +194,7 @@ section {
     left: 3rem;
     bottom: 0;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    transition: bottom 0.7s;
+    transition: opacity 0.5s ease-in-out, bottom 0.7s;
 }
 #secao-apresentacao {   
     background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
