@@ -216,3 +216,39 @@ section {
     align-items: center;
     gap: 3rem;
 }
+
+#secao-orcamento {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
+    height: 100vh;
+}
+
+#secao-orcamento form{   
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+#secao-orcamento h5{   
+    position: relative;
+    top: -1rem;
+    font-size: 4rem;
+}
+
+#secao-orcamento output{
+    grid-column: 2;
+}
+
+input[type=number]{
+    padding: .5rem;
+    background-color: #5151;
+    color: var(--color-textdefault)
+}
