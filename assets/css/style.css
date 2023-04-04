@@ -228,32 +228,44 @@ section {
 
 #secao-orcamento form{   
     padding: 2rem;
-    background-color: #FFF;
+    background-color: rgba(53, 66, 19, 0.39);
     border-radius: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
     row-gap: 1rem;
     column-gap: 2rem;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 #secao-orcamento h5{   
     position: relative;
     top: -1rem;
-    font-size: 8rem;
+    font-size: 9rem;
+    color: #FFF;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 #secao-orcamento label{
-    font-size: 2.5rem;
+    font-family: Poppins;
+    font-size: 2.0rem;
+    color: #FFF;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 #secao-orcamento output{
+    font-family: Poppins;
     grid-column: 2;
+    font-size: 2.0rem;
+    color: #FFF;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
+
 }
 
 input[type=number]{
-    font-size: 2.5rem;
+    font-family: Poppins;
+    font-size: 2.0rem;
     padding: .5rem;
-    background-color: #5151;
-    color: var(--color-textdefault)
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
