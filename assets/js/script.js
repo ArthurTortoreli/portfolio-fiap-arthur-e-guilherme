@@ -5,21 +5,13 @@ document.querySelector("#layout_nao").addEventListener("change", calcularOrcamen
 document.querySelector("#prazo").addEventListener("change", calcularOrcamento);
 
 function calcularOrcamento() {
-    let qtdePaginas = document.querySelector("#qtde").value;
-    let preco = qtdePaginas * 100;
-
-    let layout_sim = document.querySelector("#layout_sim").checked;
-    layout_sim ? preco += 500 : preco;
-
-    let js = document.querySelector("#js").checked;
-    js ? preco *= 1.1 : preco;
-
-    let prazo = document.querySelector("#prazo").value;
-    let taxaDeUrgencia = preco * (1.1 - prazo * 0.1)
+    let preco = qtde.value * 100;
+    layout_sim.checked ? preco += 500 : preco;
+    js.checked ? preco *= 1.1 : preco;
+    let taxaDeUrgencia = preco * (1.1 - prazo.value * 0.1)
     preco += taxaDeUrgencia;
     
-    document.querySelector("#label_prazo").innerHTML = `Prazo (${prazo} semanas)`;
-
-    document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`;
+    label_prazo.innerHTML = `Prazo (${prazo.value} semanas)`;
+    output.innerHTML = `R$ ${preco.toFixed(2)}`;
 }
 
