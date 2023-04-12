@@ -25,6 +25,25 @@ body {
     font-family: var(--font-default);
 }
 
+.hamburguer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 10;
+}
+
+.linha {
+    height: .5rem;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 2px 2px 2px #000;
+}
+
 header {
     display: flex; /*flexbox*/
     flex-direction: column;
