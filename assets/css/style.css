@@ -49,7 +49,7 @@ nav ul {
     gap: 1rem;
     position: fixed;
     right: -20rem;
-    background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
+    background-color: rgba(53, 66, 19, 0.85);
     height: 100vh;
     width: 20rem;
     z-index: 10;
@@ -69,7 +69,7 @@ nav ul {
 }
 
 #menu a:hover{
-    color: #6A3093;
+    color: rgba(255, 255, 255, 0.60);
 }
 
 .menu-show{
