@@ -19,6 +19,7 @@
 
 html{
     scroll-behavior: smooth;
+    background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
 }
 
 #hamburguer{
@@ -211,7 +212,6 @@ section {
 }
 
 #secao-projetos{
-    background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
     color: var(--color-textdefault);
     font-size: 2rem;
 }
@@ -252,7 +252,6 @@ section {
     transition: opacity 0.5s ease-in-out, bottom 0.7s;
 }
 #secao-apresentacao {   
-    background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -277,7 +276,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
     height: 100vh;
 }
 
