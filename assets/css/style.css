@@ -92,7 +92,7 @@ header {
 h1 {
     font-family: var(--font-header);
     font-weight: 900;
-    font-size: 10rem;
+    font-size: clamp(7rem,8vw,10rem);
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.15rem rgb(0, 0, 0);
     margin-bottom: 32rem;
@@ -323,4 +323,16 @@ input[type=number]{
     padding: .5rem;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1200px) {
+    #secao-projetos ul {
+        flex-direction: column;
+    }    
+    .large-only{
+        display: none;
+    }
+    #secao-orcamento{
+        grid-template-columns: 1fr;
+    }
 }
