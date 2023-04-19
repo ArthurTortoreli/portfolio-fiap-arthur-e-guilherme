@@ -65,6 +65,7 @@ nav ul {
     font-weight: 600;
     font-size: 2rem;
     color: white;
+    text-decoration: none;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
