@@ -214,7 +214,6 @@ section {
     background-image: radial-gradient(circle,rgb(129, 156, 98),rgb(115,140,76),rgb(76,95,28));
     color: var(--color-textdefault);
     font-size: 2rem;
-    height: 100vh;
 }
 
 #secao-projetos ul {
