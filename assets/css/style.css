@@ -98,7 +98,7 @@ h1 {
     font-size: clamp(6rem,8vw,10rem);
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.15rem rgb(0, 0, 0);
-    margin-bottom: 32rem;
+    margin-bottom: 32vh;
 }
 
 span {
@@ -326,8 +326,9 @@ input[type=number]{
     }
 }
 
-@media (max-width: 1030px) {
-    #secao-orcamento form{
-        grid-template-columns: 1fr;
+@media (max-width: 390px) {
+    .card-image img{
+        height: 40rem;
+        width: 28rem;
     }
 }
