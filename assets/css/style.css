@@ -64,7 +64,7 @@ nav ul {
 #menu a{
     font-family: Poppins;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: clamp(1.5rem,1.2vw,2rem);
     color: white;
     text-decoration: none;
     text-shadow: 0 0.5rem 0.5rem #00000067;
@@ -95,15 +95,14 @@ header {
 h1 {
     font-family: var(--font-header);
     font-weight: 900;
-    font-size: clamp(6rem,8vw,10rem);
+    font-size: clamp(6rem,8vh,10rem);
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.15rem rgb(0, 0, 0);
-    margin-bottom: 32vh;
 }
 
 span {
     font-family: var(--font-header);
-    font-size: clamp(2.5rem,4vw,4rem);
+    font-size: clamp(2.5rem,4.5vh,4rem);
     font-weight: 900;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.12rem black;
@@ -114,7 +113,7 @@ span {
     background: #d9d9d9b3;
     border-radius: 4rem;
     font-family: var(--font-header);
-    font-size: clamp(2rem,3.5vw,4.5rem);
+    font-size: clamp(1.7rem,3.5vw,2.5rem);
     font-weight: 900;
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
@@ -127,7 +126,7 @@ span {
     border-radius: 4rem;
     font-family: var(--font-header);
     font-weight: 900;
-    font-size: clamp(2rem,3.5vw,4.5rem);
+    font-size: clamp(1.7rem,2vw,4.5rem);
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
     text-decoration: none;
@@ -136,7 +135,7 @@ span {
 h2 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(2.5rem,4.5vw,4.5rem);
+    font-size: clamp(2.5rem,4.5vh,4.5rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -144,7 +143,7 @@ h2 {
 p {   
     font-family: Poppins;
     font-weight: 200;
-    font-size: clamp(1.6rem,1.8vw,1.8rem);
+    font-size: clamp(1.3rem,1.8vw,1.8rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -152,7 +151,7 @@ p {
 h3 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(2.5rem,4.5vw,4.5rem);
+    font-size: clamp(2.5rem,4.5vh,4.5rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -160,7 +159,7 @@ h3 {
 h4 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(2.5rem,3.2vw,3.2rem);
+    font-size: clamp(1.8rem,3.2vw,3.2rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -168,15 +167,15 @@ h4 {
 h6 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: 7rem;
+    font-size: clamp(4rem,4vh,8rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 .perfil {
     margin-top: 3rem;
-    width: 30rem;
-    height: 30rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 50rem;
     animation: zoom 1s;
     border: white solid 4px;
@@ -208,6 +207,7 @@ section {
 #secao-projetos{
     color: var(--color-textdefault);
     font-size: 2rem;
+    height: 100vh;
 }
 
 #secao-projetos ul {
@@ -232,7 +232,7 @@ section {
 }
 
 .card-image img{
-    height: 60rem;
+    height: 50rem;
     width: 38rem;
     border-radius: 1rem;
     border: white solid 3.5px;
@@ -273,62 +273,73 @@ section {
     height: 100vh;
 }
 
-#secao-orcamento form{   
+#secao-orcamento form {   
     padding: 2rem;
     background-color: rgba(53, 66, 19, 0.39);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     position: relative;
     row-gap: 1rem;
     column-gap: 2rem;
     text-shadow: 0 0.5rem 0.5rem #00000067;
+    
+    /* Define duas colunas para telas maiores que 1200px */
+    grid-template-columns: repeat(2, 1fr);
 }
 
 h5{   
     font-family: Poppins;
     font-weight: 600;
     position: relative;
-    font-size: clamp(1.8rem,3vw,3rem);
+    font-size: clamp(1.8rem,3vw,2.3rem);
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 #secao-orcamento label{
     font-family: Poppins;
-    font-size: clamp(1.5rem,2vw,2rem);
+    font-size: clamp(.5rem,2vw,1.5rem);
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 #secao-orcamento output{
     font-family: Poppins;
-    grid-column: 2;
-    font-size: clamp(1.5rem,2vw,2rem);
+    font-size: clamp(.5rem,2vw,1.5rem);
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 input[type=number]{
     font-family: Poppins;
-    font-size: clamp(1.5rem,2vw,2rem);
+    font-size: clamp(.5rem,2vw,1.5rem);
     padding: .5rem;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 
 @media (max-width: 1200px) {
+    #secao-projetos{
+     height: auto;   
+    }
     #secao-projetos ul {
         flex-direction: column;
     }    
     .large-only{
         display: none;
     }
-}
-
-@media (max-width: 390px) {
+    #secao-orcamento form{
+        grid-template-columns: 1fr;
+        width: 70%;
+    }
     .card-image img{
         height: 40rem;
         width: 28rem;
+    }
+    .card-info{
+        left: 2rem;
+    }
+    nav ul {
+        width: 15rem;
     }
 }
