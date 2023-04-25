@@ -95,14 +95,14 @@ header {
 h1 {
     font-family: var(--font-header);
     font-weight: 900;
-    font-size: clamp(6rem,8vh,10rem);
+    font-size: clamp(6rem,7vh,10rem);
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.15rem rgb(0, 0, 0);
 }
 
 span {
     font-family: var(--font-header);
-    font-size: clamp(2.5rem,4.5vh,4rem);
+    font-size: clamp(2.5rem,3.5vh,4rem);
     font-weight: 900;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 0.12rem black;
@@ -113,7 +113,7 @@ span {
     background: #d9d9d9b3;
     border-radius: 4rem;
     font-family: var(--font-header);
-    font-size: clamp(1.7rem,3.5vw,2.5rem);
+    font-size: clamp(1.3rem,3.5vw,2.5rem);
     font-weight: 900;
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
@@ -126,7 +126,7 @@ span {
     border-radius: 4rem;
     font-family: var(--font-header);
     font-weight: 900;
-    font-size: clamp(1.7rem,2vw,4.5rem);
+    font-size: clamp(1.3rem,2vw,4.5rem);
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
     text-decoration: none;
@@ -135,7 +135,7 @@ span {
 h2 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(2.5rem,4.5vh,4.5rem);
+    font-size: clamp(2rem,4.5vh,4.5rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -143,7 +143,7 @@ h2 {
 p {   
     font-family: Poppins;
     font-weight: 200;
-    font-size: clamp(.1rem,1.3vw,1.8rem);
+    font-size: clamp(1.2rem,1.3vw,1.8rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -151,7 +151,7 @@ p {
 h3 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(2.5rem,4.5vh,4.5rem);
+    font-size: clamp(2rem,4.5vh,4.5rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -159,7 +159,7 @@ h3 {
 h4 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(.1rem,1.3vw,1.8rem);
+    font-size: clamp(1.2rem,1.3vw,1.8rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -168,7 +168,7 @@ h5{
     font-family: Poppins;
     font-weight: 600;
     position: relative;
-    font-size: clamp(.5rem,1.3vw,1.8rem);
+    font-size: clamp(1.2rem,1.3vw,1.8rem);
     color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -320,7 +320,7 @@ input[type=number]{
 
 @media (max-width: 1200px) {
     #secao-projetos{
-     height: auto;   
+     height: auto;
     }
     #secao-projetos ul {
         flex-direction: column;
@@ -339,4 +339,10 @@ input[type=number]{
     nav ul {
         width: 15rem;
     }
+}
+
+@media (max-height: 588px) {
+    #secao-projetos{
+        margin-top: 5rem;
+       }
 }
