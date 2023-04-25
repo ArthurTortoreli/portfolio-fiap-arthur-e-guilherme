@@ -143,7 +143,7 @@ h2 {
 p {   
     font-family: Poppins;
     font-weight: 200;
-    font-size: clamp(1.3rem,1.8vw,1.8rem);
+    font-size: clamp(.1rem,1.3vw,1.8rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -159,15 +159,24 @@ h3 {
 h4 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(1.8rem,3.2vw,3.2rem);
+    font-size: clamp(.1rem,1.3vw,1.8rem);
     color: white;
+    text-shadow: 0 0.5rem 0.5rem #00000067;
+}
+
+h5{   
+    font-family: Poppins;
+    font-weight: 600;
+    position: relative;
+    font-size: clamp(.5rem,1.3vw,1.8rem);
+    color: #FFF;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
 
 h6 {
     font-family: Poppins;
     font-weight: 700;
-    font-size: clamp(4rem,4vh,8rem);
+    font-size: clamp(3rem,4vh,8rem);
     color: white;
     text-shadow: 0 0.5rem 0.5rem #00000067;
 }
@@ -240,7 +249,7 @@ section {
 
 .card-info{
     position: absolute;
-    left: 3rem;
+    left: 2rem;
     bottom: 0;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, bottom 0.7s;
@@ -287,15 +296,6 @@ section {
     grid-template-columns: repeat(2, 1fr);
 }
 
-h5{   
-    font-family: Poppins;
-    font-weight: 600;
-    position: relative;
-    font-size: clamp(1.8rem,3vw,2.3rem);
-    color: #FFF;
-    text-shadow: 0 0.5rem 0.5rem #00000067;
-}
-
 #secao-orcamento label{
     font-family: Poppins;
     font-size: clamp(.5rem,2vw,1.5rem);
@@ -335,9 +335,6 @@ input[type=number]{
     .card-image img{
         height: 40rem;
         width: 28rem;
-    }
-    .card-info{
-        left: 2rem;
     }
     nav ul {
         width: 15rem;
